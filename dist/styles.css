@@ -348,6 +348,8 @@ template {
 }
 
 body {
+  background-image: url(../images/bg-pattern.svg);
+  background-repeat: no-repeat;
   background-color: #fafbff;
   min-height: 100vh;
 }
