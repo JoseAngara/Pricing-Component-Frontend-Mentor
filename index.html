@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="normalize.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="centered-flex">
+  <header class="web-header">
+    <svg class="web-header__img" xmlns="http://www.w3.org/2000/svg" width="146" height="145"><g fill="none" fill-rule="evenodd" stroke="#CFD8EF"><circle cx="63" cy="82" r="62.5"/><circle cx="105" cy="41" r="40.5"/></g></svg>
+    <h1 class="web-header__head">Simple, traffic-based pricing</h1>
+    <p class="web-header__p">Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <div class="container">
+    <main class="pricing">
+      <form action="" class="pricing__form">
+        <p class="pricing__pageviews" id="pageviews">100K PAGEVIEWS</p>
+        <input type="range" name="" id="planSlider" class="pricing__slider" min="0" max="4" onchange="loadData()" onmousemove="loadData()">
+        <p class="pricing__price"><span class="pricing__month-price" id="price">$16.00</span> / month</p>
+        <div class="pricing__billing">
+          <span>Monthly Billing</span>
+          <input class="pricing__checkbox" type="checkbox" name="billing" id="billing" onchange="loadData()">
+          <label class="pricing__label" for="billing"></label>
+          <span class="yearly">Yearly Billing</span>
+        </div>
+      </form>
+      <aside class="trial-container">
+        <ul class="benefits">
+          <li class="benefits__benefit">Unlimited websites</li>
+          <li class="benefits__benefit">100% data ownership</li>
+          <li class="benefits__benefit">Email reports</li>
+        </ul>
+        <button class="start-trial">Start my trial</button>
+      </aside>
+    </main>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://twitter.com/JosAngara">José Angara</a>.
+  </div>
+  <script src="dist/pricingRange.js"></script>
+</body>
+</html>
